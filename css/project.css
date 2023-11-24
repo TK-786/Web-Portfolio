@@ -1,0 +1,101 @@
+#navBox {
+  background-color: #353a3f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: "Quicksand";
+  margin-bottom: 2em;
+}
+
+#navBox #navFig img {
+  max-width: 100%;
+  width: 6.25em;
+}
+
+#navFig {
+  display: flex;
+  align-items: center;
+}
+
+#navFig p {
+  padding-left: 0.5em;
+}
+
+#navBoxList {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 4em;
+}
+
+#navBoxList li {
+  list-style: none;
+  padding: 1em;
+  transition: 0.2s ease-in-out;
+}
+
+#navBoxList li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Quicksand";
+}
+
+#navBoxList li:hover {
+  transform: translateY(-7px);
+}
+
+body {
+  background-color: #474b4e;
+  color: white;
+  padding: 0.4em;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-family: "Golos Text", sans-serif;
+  gap: 0.2em;
+}
+
+hr {
+  border: none;
+  border-top: 3px double white;
+  color: white;
+  overflow: visible;
+  text-align: center;
+  height: 0.1em;
+  width: 100%;
+}
+
+hr:after {
+  content: "";
+  padding: 1em;
+  position: relative;
+  top: -1em;
+  width: 100%;
+}
+
+.projects {
+  padding-top: 3em;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(2, auto);
+  gap: 1em;
+}
+
+.projects h2 {
+  font-family: "Silkscreen", cursive;
+  font-size: 1.8em;
+}
+
+.projects p {
+  font-family: "Golos Text", sans-serif;
+}
+
+.projects figure {
+  text-align: center;
+  padding-top: 1em;
+}

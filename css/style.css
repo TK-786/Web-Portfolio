@@ -1,0 +1,139 @@
+body {
+  background-color: #1b1e23;
+  padding: 0.4em;
+}
+
+#navBox {
+  background-color: #353a3f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: "Quicksand";
+}
+
+#navBox #navFig img {
+  max-width: 100%;
+  width: 6.25em;
+}
+
+#navFig {
+  display: flex;
+  align-items: center;
+}
+
+#navFig p {
+  padding-left: 0.5em;
+}
+
+#navBoxList {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 4em;
+}
+
+#navBoxList li {
+  list-style: none;
+  padding: 1em;
+  transition: 0.2s ease-in-out;
+}
+
+#navBoxList li:hover {
+  transform: translateY(-7px);
+}
+
+#navBoxList li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Quicksand";
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  color: white;
+}
+
+h1 {
+  font-size: 3em;
+  padding-bottom: 0.2em;
+  text-align: center;
+  font-family: "Tilt Neon";
+}
+
+h2 {
+  font-size: 1.8em;
+  padding-bottom: 0.5em;
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+hgroup {
+  text-align: center;
+}
+
+#footSection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+#footSection img,
+#footSection a img {
+  max-width: 30%;
+}
+
+#footSection a,
+#email {
+  text-align: center;
+  padding: 1em;
+  padding-top: 2em;
+}
+
+button {
+  background: transparent;
+  border: red solid 0.1em;
+  border-radius: 1em;
+  padding: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
+  color: white;
+  transition: 0.4s;
+  font-family: "Urbanist", sans-serif;
+  width: 20em;
+  max-width: 100%;
+}
+
+button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+#buttons {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+article a {
+  padding: 0.5em;
+}
+
+.sub {
+  font-size: 1.5em;
+  color: white;
+  font-family: "Urbanist", sans-serif;
+  opacity: 0;
+}
+
+.sub:hover {
+  cursor: pointer;
+}

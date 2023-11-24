@@ -1,0 +1,335 @@
+#navBox {
+  background-color: #5c677d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: "Quicksand";
+  margin-bottom: 2em;
+}
+
+#navBox #navFig img {
+  max-width: 100%;
+  width: 6.25em;
+}
+
+#navFig {
+  display: flex;
+  align-items: center;
+}
+
+#navFig p {
+  padding-left: 0.5em;
+}
+
+#navBoxList {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 4em;
+}
+
+#navBoxList li {
+  list-style: none;
+  padding: 1em;
+  transition: 0.2s ease-in-out;
+}
+
+#navBoxList li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Quicksand";
+}
+
+#navBoxList li:hover {
+  transform: translateY(-7px);
+}
+
+.addPost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.addPost form {
+  text-align: center;
+  padding: 2em;
+  /* background-color: #339989; */
+  background-color: #daddd8;
+  border: solid #2b2c28 0.13em;
+  border-radius: 2em;
+  box-shadow: 0 0 1em white;
+  padding: 3em;
+  max-width: 100%;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.addPost form input {
+  max-width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 1em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  color: white;
+  background-color: #162938;
+  text-align: center;
+  border-radius: 1em;
+  font-family: "IBM Plex Mono", monospace;
+  margin-bottom: 0.2em;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0.3em;
+  background-color: #1d2b3a;
+}
+
+.inputBox,
+textarea {
+  position: relative;
+  max-width: 100%;
+}
+
+.inputBox input[type="text"],
+textarea {
+  width: 100%;
+  border: 0.15em solid rgba(255, 255, 255, 0.25);
+  border-radius: 0.5em;
+  outline: none;
+  background-color: #daddd8;
+  transition: 0.5s;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0.3em;
+  top: 1.1em;
+  font-size: 1.3em;
+  transition: 0.5s;
+}
+
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span {
+  color: #7de2d1;
+  transform: translateX(1em) translateY(-0.7em);
+  font-size: 1em;
+  background-color: #daddd8;
+  border-left: 0.1em solid #7de2d1;
+  border-right: 0.1em solid #7de2d1;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  letter-spacing: 0.2em;
+}
+
+.inputBox input:focus,
+.inputBox input:valid {
+  border: 0.15em solid #7de2d1;
+}
+
+textarea::placeholder {
+  color: black;
+}
+
+.aboutMe,
+.experience {
+  display: flex;
+
+  color: white;
+  font-family: "Tilt Neon";
+}
+
+.aboutMe ul {
+  list-style-type: none;
+}
+
+h1 {
+  color: white;
+  font-size: 2em;
+  width: 10px;
+  border-bottom: solid white 0.1em;
+  margin-bottom: 0.2em;
+  transition: 0.5s;
+}
+
+h1:hover {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  font-family: "Quicksand";
+  font-size: 1.4em;
+}
+
+#about1,
+.experience {
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 1em;
+}
+
+#about1 {
+  justify-content: space-around;
+}
+
+#about1 figure {
+  text-align: center;
+}
+
+#about1 img {
+  width: 400px;
+  border-radius: 0.4em;
+  box-shadow: 0 0 2.5em rgba(0, 0, 0, 0.5);
+  filter: blur(0.2em);
+  transition: 0.4s;
+}
+
+#about1 img:hover {
+  filter: blur(0);
+}
+
+#about1 {
+  margin-right: 2em;
+}
+
+#aboutText {
+  border: 0.1em solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 2.5em rgba(0, 0, 0, 0.5);
+  border-radius: 0.2em;
+  padding: 1em;
+  width: 20em;
+}
+
+#exp1 ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1em;
+  color: white;
+}
+
+input[type="text"].invalid,
+textarea.invalid {
+  border-color: red;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 10px;
+  width: 80%;
+  margin: 2em auto;
+}
+
+.blogData {
+  color: black;
+  background-color: #daddd8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Poiret One", cursive;
+  font-size: 1.5rem;
+  width: 60%;
+  margin: 1em auto;
+  border: orange solid 0.1em;
+  padding: 0.5em;
+}
+
+.date {
+  align-self: flex-end;
+  margin-bottom: 0.5em;
+  padding-top: 0.5em;
+  padding-right: 0.4em;
+}
+
+.name {
+  align-self: flex-start;
+  margin-bottom: 0.5em;
+  width: 50%;
+  transition: 0.5s;
+}
+
+.name p {
+  border-bottom: solid white 0.1em;
+  margin-bottom: 0.2em;
+}
+.blogTitle {
+  margin-bottom: 0.5em;
+}
+
+.name:hover {
+  width: 100%;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.monthForm form {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.monthForm select {
+  text-align: center;
+  border-radius: 1em;
+  margin: 1em;
+  background-color: #daddd8;
+  border: solid black 0.2em;
+}
+
+#monthBtn {
+  background-color: #daddd8;
+  color: black;
+  width: fit-content;
+  margin: 1em;
+  border: solid black 0.2em;
+}
+
+.comments {
+  /* border-top: solid white 0.1em; */
+  padding-top: 1em;
+  margin-top: 1em;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+.addComments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.commentText {
+  text-align: center;
+  border-radius: 1em;
+  margin: 0.4em;
+}
+
+.deleteBtn {
+  background-color: red;
+  padding: 0.6em;
+}

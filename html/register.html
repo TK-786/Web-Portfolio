@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Quicksand&family=Shantell+Sans&family=Tilt+Neon&family=Urbanist&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Register</title>
+  </head>
+  <body>
+    <h2>Register</h2>
+
+    <div class="formBox">
+      <form action="../php/register.php" method="post">
+        <div class="inputBox">
+          <input type="email" name="username" id="username" required />
+          <label for="username">Email</label>
+        </div>
+        <br />
+
+        <div class="inputBox">
+          <input type="password" name="password" id="password" required />
+          <label for="password">Password</label>
+        </div>
+        <br />
+
+        <div class="inputBox">
+          <input type="text" name="fname" id="fname" required />
+          <label for="password">First Name</label>
+        </div>
+        <br />
+
+        <div class="inputBox">
+          <input type="text" name="lname" id="lname" required />
+          <label for="password">Last Name</label>
+        </div>
+        <br />
+
+        <input type="submit" name="submit" />
+        <a href="../php/index.php">
+          <button type="button">Back to home</button>
+        </a>
+      </form>
+    </div>
+  </body>
+</html>

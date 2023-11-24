@@ -1,0 +1,12 @@
+#navBox {
+  flex-direction: column;
+  width: 100%;
+}
+
+#navBoxList {
+  flex-direction: column;
+}
+
+#footSection {
+  flex-direction: column;
+}
